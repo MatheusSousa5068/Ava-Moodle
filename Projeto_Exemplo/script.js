@@ -3,6 +3,7 @@ async function buscarEndereco() {
     const url = `https://viacep.com.br/ws/${cep}/json/`;
 
     try {
+        resetCampos()
         const response = await fetch(url);
         const data = await response.json();
 
