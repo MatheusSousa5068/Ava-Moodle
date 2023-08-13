@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEP</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">Consulta de CEP</h1>
+        <div class="form-group">
+            <label for="cep">Digite o CEP:</label>
+            <input type="text" class="form-control" id="cep" placeholder="Digite o CEP">
+        </div>
+        <button class="btn btn-primary" onclick="buscarEndereco()">Buscar</button>
+        <button class="btn btn-danger" onclick="resetCampos()">Limpar</button>
+
+        <h2 class="mt-5">Informações do Endereço:</h2>
+        <p><strong>Logradouro:</strong> <span id="logradouro"></span></p>
+        <p><strong>Bairro:</strong> <span id="bairro"></span></p>
+        <p><strong>Cidade:</strong> <span id="cidade"></span></p>
+        <p><strong>Estado:</strong> <span id="estado"></span></p>
+    </div>
+</body>
+</html>
